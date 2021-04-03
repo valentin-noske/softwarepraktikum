@@ -12,4 +12,4 @@ if(OPENMP_FOUND)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 endif()
 
-add_executable(task0 main.cpp random_generator.hpp vector.cpp umap.cpp map.cpp)
+add_executable(task0 main.cpp vector.cpp umap.cpp map.cpp random_generator.cpp)
