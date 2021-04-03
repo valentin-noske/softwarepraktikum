@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/task0.dir/main.cpp.o  -o task0 
+/usr/bin/c++  -g   CMakeFiles/task0.dir/main.cpp.o CMakeFiles/task0.dir/random_generator.cpp.o  -o task0 

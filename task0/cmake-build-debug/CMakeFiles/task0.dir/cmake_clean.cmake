@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/task0.dir/main.cpp.o"
+  "CMakeFiles/task0.dir/random_generator.cpp.o"
   "task0"
   "task0.pdb"
 )
