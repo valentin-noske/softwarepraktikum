@@ -3,4 +3,4 @@ project(task0)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(task0 main.cpp)
+add_executable(task0 main.cpp random_generator.hpp)

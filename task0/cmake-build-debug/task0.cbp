@@ -85,6 +85,9 @@
 		<Unit filename="/home/valentin/Schreibtisch/softwarepraktikum/task0/main.cpp">
 			<Option target="task0"/>
 		</Unit>
+		<Unit filename="/home/valentin/Schreibtisch/softwarepraktikum/task0/random_generator.hpp">
+			<Option target="task0"/>
+		</Unit>
 		<Unit filename="/home/valentin/Schreibtisch/softwarepraktikum/task0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
