@@ -9,8 +9,6 @@
 
 #include <iostream>
 #include <vector>
-#include <map>
-#include <unordered_map>
 #include <list>
 #include <omp.h>
 /*
@@ -18,10 +16,11 @@ std::vector<int> vector_erstellen(int const &gr);
 */
 std::vector<std::pair<int,int>> pair_vector_erstellen(int const &gr);
 
-
+bool bin_suche(std::vector<std::pair<int,int>>const &vec, int & ziel);
 /*
 std::list<int> liste_erstellen(int const &gr);
 */
 
+void test_b_v_p(std::vector<std::pair<int, int>> vec);
 
 void test_v_p(std::vector<std::pair<int, int>> vec);
