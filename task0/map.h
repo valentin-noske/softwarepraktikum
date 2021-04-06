@@ -10,7 +10,11 @@
 #include <iostream>
 #include <map>
 #include <omp.h>
+#include <string>
+#include "random_generator.h"
 
 std::map<int,int> map_erstellen(int const &gr);
+
+std::map<std::string,int> map_erstellen_strings(int const &gr);
 
 void test_m(std::map<int,int> const &map);

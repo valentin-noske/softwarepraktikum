@@ -10,8 +10,12 @@
 #include <iostream>
 #include <unordered_map>
 #include <omp.h>
+#include <string>
+#include "random_generator.h"
 
 std::unordered_map<int,int> u_map_erstellen(int const &gr);
+
+std::unordered_map<std::string,int> u_map_erstellen_strings(int const &gr);
 /*
 std::list<int> liste_erstellen(int const &gr);
 */
