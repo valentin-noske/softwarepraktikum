@@ -15,15 +15,13 @@
 #include <omp.h>
 /*
 std::vector<int> vector_erstellen(int const &gr);
-
-std::vector<std::pair<int,int>> pair_vector_erstellen(int const &gr);
 */
-std::map<int,int> map_erstellen(int const &gr);
+std::vector<std::pair<int,int>> pair_vector_erstellen(int const &gr);
 
-std::unordered_map<int,int> u_map_erstellen(int const &gr);
+
 /*
 std::list<int> liste_erstellen(int const &gr);
 */
-void test_m(std::map<int,int> const &map);
 
-void test_um(std::unordered_map<int,int> const &map);
+
+void test_v_p(std::vector<std::pair<int, int>> vec);

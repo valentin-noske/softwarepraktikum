@@ -1,0 +1,19 @@
+//
+// Created by vince on 06.04.21.
+//
+
+#ifndef TASK0_UMAP_H
+#define TASK0_UMAP_H
+
+#endif //TASK0_UMAP_H
+
+#include <iostream>
+#include <unordered_map>
+#include <omp.h>
+
+std::unordered_map<int,int> u_map_erstellen(int const &gr);
+/*
+std::list<int> liste_erstellen(int const &gr);
+*/
+
+void test_um(std::unordered_map<int,int> const &map);
