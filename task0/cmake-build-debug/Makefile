@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task0.dir/build.make CMakeFiles/task0.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+random_generator.o: random_generator.cpp.o
+
+.PHONY : random_generator.o
+
+# target to build an object file
+random_generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task0.dir/build.make CMakeFiles/task0.dir/random_generator.cpp.o
+.PHONY : random_generator.cpp.o
+
+random_generator.i: random_generator.cpp.i
+
+.PHONY : random_generator.i
+
+# target to preprocess a source file
+random_generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task0.dir/build.make CMakeFiles/task0.dir/random_generator.cpp.i
+.PHONY : random_generator.cpp.i
+
+random_generator.s: random_generator.cpp.s
+
+.PHONY : random_generator.s
+
+# target to generate assembly for a file
+random_generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task0.dir/build.make CMakeFiles/task0.dir/random_generator.cpp.s
+.PHONY : random_generator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +209,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... random_generator.o"
+	@echo "... random_generator.i"
+	@echo "... random_generator.s"
 .PHONY : help
 
 
