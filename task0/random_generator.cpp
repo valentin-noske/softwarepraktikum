@@ -11,7 +11,7 @@ std::vector<int> key_numbers(int count) {
     return numbers;
 }
 std::string get_random_string(){
-    
+
 }
 
 std::vector<std::string> value_strings(int count) {
