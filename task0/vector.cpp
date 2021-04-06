@@ -10,16 +10,26 @@
 std::vector<std::pair<int,int>> pair_vector_erstellen(int const &gr){
     std::vector<std::pair<int,int>> v_daten;
     v_daten.reserve(gr);
-    int i = 0;
-    while(i < gr) {
-        std::pair<int,int> foo{i, rand() % gr};
+    std::vector<int> numbers = key_numbers(gr);
+    for(int z:numbers) {
+        std::pair<int,int> foo{z, rand() % gr};
         v_daten.push_back(foo);
-        ++i;
     }
     return v_daten;
 }
 
-bool bin_suche(std::vector<std::pair<int,int>> const &vec, int  & ziel){
+std::vector<std::pair<std::string,int>> pair_vector_erstellen_string(int const &gr){
+    std::vector<std::pair<std::string,int>> v_daten;
+    v_daten.reserve(gr);
+    std::vector<std::string> strings = key_strings(gr);
+    for(std::string s:strings) {
+        std::pair<std::string,int> foo{s, rand() % gr};
+        v_daten.push_back(foo);
+    }
+    return v_daten;
+}
+
+bool bin_suche(std::vector<std::pair<int,int>>const & vec, int  & ziel){
     int r_g = vec.size()-1;
     int l_g = 0;
     while(l_g <= r_g){
@@ -34,9 +44,10 @@ bool bin_suche(std::vector<std::pair<int,int>> const &vec, int  & ziel){
 }
 
 
-void test_b_v_p(std::vector<std::pair<int, int>> const &vec) {
+void test_b_v_p(std::vector<std::pair<int, int>> vec) {
     double start, end;
     int s = vec.size();
+    std::sort(vec.begin(), vec.end(), [](auto &left, auto &right){return left.first < right.first;});
     double c = 0;
     std::cout << "vector&pair binärsuche mit " << s << " Elementen" << "\n";
     start = omp_get_wtime();

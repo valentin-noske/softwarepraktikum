@@ -7,10 +7,18 @@
 
 std::map<int,int> map_erstellen(int const &gr){
     std::map<int,int> m_daten;
-    int i = 0;
-    while(i < gr) {
-        m_daten.emplace(i, rand() % gr);
-        ++i;
+    std::vector<int> numbers = key_numbers(gr);
+    for(int z:numbers) {
+        m_daten.emplace(z, rand() % gr);
+    }
+    return m_daten;
+}
+
+std::map<std::string,int> map_erstellen_strings(int const &gr){
+    std::map<std::string,int> m_daten;
+    std::vector<std::string> strings = key_strings(gr);
+    for(std::string s:strings) {
+        m_daten.emplace(s, rand() % gr);
     }
     return m_daten;
 }
