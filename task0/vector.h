@@ -21,6 +21,6 @@ bool bin_suche(std::vector<std::pair<int,int>>const &vec, int & ziel);
 std::list<int> liste_erstellen(int const &gr);
 */
 
-void test_b_v_p(std::vector<std::pair<int, int>> vec);
+void test_b_v_p(std::vector<std::pair<int, int>> const &vec);
 
-void test_v_p(std::vector<std::pair<int, int>> vec);
+void test_v_p(std::vector<std::pair<int, int>> const &vec);

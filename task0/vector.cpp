@@ -6,7 +6,6 @@
 
 
 
-std::vector<int> vector_erstellen(int const &gr);
 
 std::vector<std::pair<int,int>> pair_vector_erstellen(int const &gr){
     std::vector<std::pair<int,int>> v_daten;
@@ -35,7 +34,7 @@ bool bin_suche(std::vector<std::pair<int,int>> const &vec, int  & ziel){
 }
 
 
-void test_b_v_p(std::vector<std::pair<int, int>> const vec) {
+void test_b_v_p(std::vector<std::pair<int, int>> const &vec) {
     double start, end;
     int s = vec.size();
     double c = 0;
@@ -67,7 +66,7 @@ void test_b_v_p(std::vector<std::pair<int, int>> const vec) {
 }
 
 
-void test_v_p(std::vector<std::pair<int, int>> const vec) {
+void test_v_p(std::vector<std::pair<int, int>> const &vec) {
     double start, end;
     int s = vec.size();
     double c = 0;
