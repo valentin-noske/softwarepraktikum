@@ -5,7 +5,7 @@
 #ifndef TASK0_RANDOM_GENERATOR_HPP
 #define TASK0_RANDOM_GENERATOR_HPP
 #endif //TASK0_RANDOM_GENERATOR_HPP
-
+#include <string>
 #include <vector>
 
 std::vector<int> random_numbers(int count);

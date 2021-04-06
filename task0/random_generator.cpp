@@ -13,15 +13,15 @@ std::vector<int> key_numbers(int count) {
 std::string get_random_string(){
 
 }
-
+/*
 std::vector<std::string> value_strings(int count) {
-    std::vector<string> strings = {};
+    std::vector<std::string> strings = {};
     for(uint counter = 0; counter < count; ++counter) {
-        numbers.push_back(counter);
+        strings.push_back(counter);
     }
-    return numbers;
+    return strings;
 }
-
+*/
 
 
 
